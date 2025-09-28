@@ -1,3 +1,35 @@
+<!DOCTYPE html>
 <html>
-  This is a website.
+<head>
+  <title>My Awesome Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="vanta-canvas"></div>
+  <div class="content">
+    <h1>Welcome to my website</h1>
+    <p>This is some content on top of an animated background.</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#vanta-canvas",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x20b,
+      shininess: 33.00,
+      waveHeight: 17.50,
+      waveSpeed: 0.70,
+      zoom: 0.90
+    })
+  </script>
+</body>
 </html>
