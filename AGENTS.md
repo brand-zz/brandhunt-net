@@ -44,30 +44,22 @@ This document outlines best practices for programming tasks. The focus is on ens
     *   Understand move semantics to avoid unnecessary copies.
     *   Use `const` and `constexpr` where appropriate.
 
-## C/C++ Formatting Astyle
+## C/C++ Formatting Style
 
-Use the following AStyle rules for formatting C and C++ code:
+Use the following these style rules for formatting C and C++ code:
 
-```
---style=allman
--s2    # 2 space indent
--N     # indent namespaces
--xW    # Indent preprocessor blocks at brace level zero and immediately within a namespace
--w     # Indent multi-line preprocessor definitions ending with a backslash.
--p     # Insert space padding around operators.
--H     # Insert space padding between a header
--k1    # Attach a pointer or reference operator to type
--y     # Indent C++ comments beginning in column one.
--xb    # Break one line headers from a statement residing on the same line.
--j     # Add braces to unbraced one line conditional statements
--c     # Converts tabs into spaces in the non-indentation part of the line
--o     # Don't break one-line blocks.
--xy    # Closes whitespace between the ending angle brackets of template definitions.
--xL    # break on a logical conditional
--xC200 # The option max-code-length will break a line if the code exceeds # characters.
--M120  # Set the minimal indent that is added when a header is built of multiple lines.
---min-conditional-indent=0
-```
+*   Allman braces: opening brace on its own line for all blocks.
+*   Indent with 2 spaces. Convert any tabs in code text to spaces (non-indent regions too).
+*   Indent namespace bodies like normal blocks.
+*   Preprocessor: indent multi-line #define wraps; indent #if/#endif at brace level 0 and when directly inside a namespace.
+*   Spacing: add spaces around all operators; add a space between control keywords (if/for/while/switch) and (.
+*   Pointers/refs bind to the type (int* p, T& x).
+*   Indent column-1 // comments to the current block level.
+*   Split one-line headers (if (x) do();) so the statement is on the next line; add braces to previously unbraced conditionals. Keep explicit one-line blocks on one line when present.
+*   Templates: no space between nested > closers (>>).
+*   Wrap lines at ~200 chars; when wrapping conditions, prefer breaking at logical operators. Allow up to ~120 spaces of continuation indent; minimum continuation indent in conditionals can be 0.
+*   
+Apply these consistently across classes, functions, control flow, and preprocessor usage.
 
 ## Java
 
