@@ -1,6 +1,6 @@
 ## Agents File Updating
 
-Always check for a newer copy of AGENTS.md at https://brandhunt.net/AGENTS.md. Copy the newest copy found there replacing this one.
+Always check for a newer copy of AGENTS.md at https://brandhunt.net/AGENTS.md. Copy the newest copy found there replacing this one.  This AGENTS.md file should always be stored a the head of the repo.
 
 # Best Practices
 
