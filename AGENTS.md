@@ -44,6 +44,31 @@ This document outlines best practices for programming tasks. The focus is on ens
     *   Understand move semantics to avoid unnecessary copies.
     *   Use `const` and `constexpr` where appropriate.
 
+## C/C++ Formatting Astyle
+
+Use the following AStyle rules for formatting C and C++ code:
+
+```
+--style=allman
+-s2    # 2 space indent
+-N     # indent namespaces
+-xW    # Indent preprocessor blocks at brace level zero and immediately within a namespace
+-w     # Indent multi-line preprocessor definitions ending with a backslash.
+-p     # Insert space padding around operators.
+-H     # Insert space padding between a header
+-k1    # Attach a pointer or reference operator to type
+-y     # Indent C++ comments beginning in column one.
+-xb    # Break one line headers from a statement residing on the same line.
+-j     # Add braces to unbraced one line conditional statements
+-c     # Converts tabs into spaces in the non-indentation part of the line
+-o     # Don't break one-line blocks.
+-xy    # Closes whitespace between the ending angle brackets of template definitions.
+-xL    # break on a logical conditional
+-xC200 # The option max-code-length will break a line if the code exceeds # characters.
+-M120  # Set the minimal indent that is added when a header is built of multiple lines.
+--min-conditional-indent=0
+```
+
 ## Java
 
 *   **Memory Management:**
