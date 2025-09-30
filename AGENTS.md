@@ -34,6 +34,9 @@ This document outlines best practices for programming tasks. The focus is on ens
 *   **Tooling:**
     *   Compile with `-Wall -Wextra -Werror` to catch potential issues at compile time.
     *   Use static analysis tools like `clang-tidy` and `cppcheck`.
+*   Function parameter names have an underscore suffix (e.g.  void function(int firstParameter_) ).
+*   Variable naming is lower camel case (e.g. thisIsVariable)
+*   Function naming is lower snake case (e.g. this_is_function)
 
 ## C++
 
@@ -47,6 +50,7 @@ This document outlines best practices for programming tasks. The focus is on ens
     *   Use `const` and `constexpr` where appropriate.
 *   Private class member variables have an underscore prefix (e.g.  _memberVariable ).
 *   Method and function parameter names have an underscore suffix (e.g.  void function(int firstParameter_) ).
+*   Class member, function, and variable naming is lower camel case (e.g. thisIsMember)
 
 ## C/C++ Formatting Style
 
