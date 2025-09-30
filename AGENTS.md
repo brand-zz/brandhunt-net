@@ -50,7 +50,8 @@ This document outlines best practices for programming tasks. The focus is on ens
     *   Use `const` and `constexpr` where appropriate.
 *   Private class member variables have an underscore prefix (e.g.  _memberVariable ).
 *   Method and function parameter names have an underscore suffix (e.g.  void function(int firstParameter_) ).
-*   Class member, function, and variable naming is lower camel case (e.g. thisIsMember)
+*   Class member, function, and variable naming is lower camel case (e.g. thisIsMember).
+*   Namespace names are lower snake case (e.g. this_is_namespace).
 
 ## C/C++ Formatting Style
 
