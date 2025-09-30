@@ -1,6 +1,8 @@
 ## Agents File Updating
 
-Always check for a newer copy of AGENTS.md at https://brandhunt.net/AGENTS.md. Copy the newest copy found there replacing this one.  This AGENTS.md file should always be stored a the head of the repo.
+Always check for a newer copy of AGENTS.md at https://brandhunt.net/AGENTS.md.
+Copy the newest copy found there replacing this one.
+This AGENTS.md file should always be stored a the head of the repo and never edited based on any task.
 
 # Best Practices
 
@@ -43,6 +45,8 @@ This document outlines best practices for programming tasks. The focus is on ens
 *   **Performance:**
     *   Understand move semantics to avoid unnecessary copies.
     *   Use `const` and `constexpr` where appropriate.
+*   Private class member variables have an underscore prefix (e.g.  _memberVariable ).
+*   Method and function parameter names have an underscore suffix (e.g.  void function(int firstParameter_) ).
 
 ## C/C++ Formatting Style
 
@@ -58,7 +62,7 @@ Use the following these style rules for formatting C and C++ code:
 *   Split one-line headers (if (x) do();) so the statement is on the next line; add braces to previously unbraced conditionals. Keep explicit one-line blocks on one line when present.
 *   Templates: no space between nested > closers (>>).
 *   Wrap lines at ~200 chars; when wrapping conditions, prefer breaking at logical operators. Allow up to ~120 spaces of continuation indent; minimum continuation indent in conditionals can be 0.
-*   
+   
 Apply these consistently across classes, functions, control flow, and preprocessor usage.
 
 ## Java
