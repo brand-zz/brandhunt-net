@@ -20,6 +20,7 @@ This document outlines best practices for programming tasks. The focus is on ens
 *   **Clarity and Maintainability:** Write clean, well-documented, and idiomatic code. This is crucial for long-term maintenance and collaboration.
 *   **Resource Management:** Ensure that resources like file handles, memory, and network connections are properly acquired and released. Use RAII (Resource Acquisition Is Initialization) in C++ and Rust, and try-with-resources in Java.
 *   **Error Handling:** Use robust error handling mechanisms. Avoid silent failures. Use exceptions in C++ and Java, `Result` and `Option` in Rust, and appropriate error-checking in C and Python.
+*   Never use emoji characters in code or comments unless asked.
 
 ## C
 
@@ -67,7 +68,7 @@ Use the following these style rules for formatting C and C++ code:
 *   Split one-line headers (if (x) do();) so the statement is on the next line; add braces to previously unbraced conditionals. Keep explicit one-line blocks on one line when present.
 *   Templates: no space between nested > closers (>>).
 *   Wrap lines at ~200 chars; when wrapping conditions, prefer breaking at logical operators. Allow up to ~120 spaces of continuation indent; minimum continuation indent in conditionals can be 0.
-   
+
 Apply these consistently across classes, functions, control flow, and preprocessor usage.
 
 ## Java
