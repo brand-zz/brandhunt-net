@@ -20,7 +20,7 @@ This document outlines best practices for programming tasks. The focus is on ens
 *   **Clarity and Maintainability:** Write clean, well-documented, and idiomatic code. This is crucial for long-term maintenance and collaboration.
 *   **Resource Management:** Ensure that resources like file handles, memory, and network connections are properly acquired and released. Use RAII (Resource Acquisition Is Initialization) in C++ and Rust, and try-with-resources in Java.
 *   **Error Handling:** Use robust error handling mechanisms. Avoid silent failures. Use exceptions in C++ and Java, `Result` and `Option` in Rust, and appropriate error-checking in C and Python.
-*   Never use emoji characters in code or comments unless asked.
+*   Never add emoji characters in code or comments unless asked. Retain existing emoji, unicode characters, and escape sequences.
 
 ## C
 
@@ -49,12 +49,12 @@ This document outlines best practices for programming tasks. The focus is on ens
 *   **Performance:**
     *   Understand move semantics to avoid unnecessary copies.
     *   Use `const` and `constexpr` where appropriate.
-*   Private class member variables have an underscore prefix (e.g.  _memberVariable ).
+*   Class member variables have an underscore prefix (e.g.  _memberVariable ).
 *   Method and function parameter names have an underscore suffix (e.g.  void function(int firstParameter_) ).
 *   Class member, function, and variable naming is lower camel case (e.g. thisIsMember).
 *   Namespace names are lower snake case (e.g. this_is_namespace).
 
-## C/C++ Formatting Style
+## C and C++ Formatting Style
 
 Use the following these style rules for formatting C and C++ code:
 
