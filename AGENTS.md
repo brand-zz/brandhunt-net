@@ -60,7 +60,7 @@ Use the following these style rules for formatting C and C++ code:
 
 *   Allman braces: opening brace on its own line for all blocks.
 *   Indent with 2 spaces. Convert any tabs in code text to spaces (non-indent regions too).
-*   Indent namespace bodies like normal blocks.
+*   Indent namespace and extern bodies like normal blocks.
 *   Preprocessor: indent multi-line #define wraps; indent #if/#endif at brace level 0 and when directly inside a namespace.
 *   Spacing: add spaces around all operators; add a space between control keywords (if/for/while/switch) and (.
 *   Pointers/refs bind to the type (int* p, T& x).
